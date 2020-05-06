@@ -28,7 +28,100 @@
       </address>
     </header>
     <!-- Основное содержание -->
-    <main></main>
+    <main>
+      <!-- Кнопки-фильтры -->
+      <section class="button-container">
+        <button class="btn-filter active" onclick="filterSelection('all')">
+          Все
+        </button>
+        <button class="btn-filter" onclick="filterSelection('web-sites')">
+          Веб-сайты
+        </button>
+        <button class="btn-filter" onclick="filterSelection('app')">
+          Приложения
+        </button>
+        <button class="btn-filter" onclick="filterSelection('design')">
+          Дизайн
+        </button>
+        <button class="btn-filter" onclick="filterSelection('marketing')">
+          Маркетинг
+        </button>
+      </section>
+      <!-- Примеры работ -->
+      <section class="portfolio">
+        <ul class="list">
+          <li>
+            <a href=""
+              ><img
+                src="./images/tehnokryak.jpg"
+                alt="Скриншот веб-сайта"
+                width="380"
+            /></a>
+            <h2>Технокряк</h2>
+            <p>Веб-сайт</p>
+          </li>
+          <li>
+            <a href=""
+              ><img
+                src="./images/new-orlean.jpg"
+                alt="постер с баскетболистами"
+                width="380"
+            /></a>
+            <h2>Постер New Orlean vs Golden Stars</h2>
+            <p>Дизайн</p>
+          </li>
+          <li>
+            <a href=""
+              ><img src="./images/rest-seafood.jpg" alt="рыба" width="380"
+            /></a>
+            <h2>Ресторан Seafood</h2>
+            <p>Приложение</p>
+          </li>
+          <li>
+            <a href=""
+              ><img src="./images/prima.jpg" alt="наушники" width="380"
+            /></a>
+            <h2>Проект Prime</h2>
+            <p>Маркетинг</p>
+          </li>
+          <li>
+            <a href=""
+              ><img src="./images/boxes.jpg" alt="две коробочки" width="380"
+            /></a>
+            <h2>Проект Boxes</h2>
+            <p>Приложение</p>
+          </li>
+          <li>
+            <a href=""
+              ><img src="./images/inspiration.jpg" alt="монитор" width="380"
+            /></a>
+            <h2>Inspiration has no Borders</h2>
+            <p>Веб-сайт</p>
+          </li>
+          <li>
+            <a href=""
+              ><img src="./images/izdanie.jpg" alt="журнал" width="380"
+            /></a>
+            <h2>Издание Limited Edition</h2>
+            <p>Дизайн</p>
+          </li>
+          <li>
+            <a href=""
+              ><img src="./images/lab.jpg" alt="ярлык" width="380"
+            /></a>
+            <h2>Проект LAB</h2>
+            <p>Маркетинг</p>
+          </li>
+          <li>
+            <a href=""
+              ><img src="./images/business.jpg" alt="ноутбук" width="380"
+            /></a>
+            <h2>Growing Business</h2>
+            <p>Приложение</p>
+          </li>
+        </ul>
+      </section>
+    </main>
     <!-- Футер -->
     <footer>
       <div>
@@ -36,14 +129,17 @@
           <a href="./index.html" class="logo">
             <h2><span class="accent">Web</span> Studio</h2>
           </a>
-          <address>
-            <a href="#">г. Киев, пр-т Леси Украинки, 26</a><br />
-            <a href="mailto:info@devstudio.com">info@example.com</a><br />
-            <a href="tel:+380991111111">+38 099 111 11 11</a><br />
+          <address class="address-nav">
+            <a href="#" class="link">г. Киев, пр-т Леси Украинки, 26</a><br />
+            <a href="mailto:info@devstudio.com" class="transparent"
+              >info@example.com</a
+            ><br />
+            <a href="tel:+380991111111" class="transparent">+38 099 111 11 11</a
+            ><br />
           </address>
         </div>
-        <div>
-          <p>присоединяйтесь</p>
+        <div class="social">
+          <p class="link">присоединяйтесь</p>
           <ul class="list">
             <li>
               <a href=""
@@ -91,12 +187,12 @@
             </li>
           </ul>
         </div>
-        <div>
-          <p>подписаться на рассылку</p>
-          <a href="">Подписаться</a>
+        <div class="social">
+          <p class="link">подписаться на рассылку</p>
+          <a href="" class="button">Подписаться</a>
         </div>
       </div>
-      <p>2020 | Developed by GoIT Students</p>
+      <p class="author">2020 | Developed by GoIT Students</p>
     </footer>
   </body>
 </html>

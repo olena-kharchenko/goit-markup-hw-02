@@ -1,0 +1,114 @@
+/* цвет-акцент голубой color: #2196F3; */
+/* цвет заголовков color: #212121; */
+/* цвет текста color: #757575; */
+/* цвет белый color: #FFFFFF; */
+/* адрес в футере color: rgba(255, 255, 255, 0.6); */
+/* цвет мелкой подписи color: rgba(255, 255, 255, 0.4); */
+
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --secondary-white-color: rgba(
+    255,
+    255,
+    255,
+    0.6
+  ); /*белый полупрозрачный в футере в адресе*/
+  --primary-black-color: #000000;
+  --bg-subtitle-color: rgba(47, 48, 58, 0.8);
+  --author-color: rgba(255, 255, 255, 0.4); /*мелкая подпись в самом низу*/
+}
+
+body {
+  background-color: gainsboro;
+  color: var(--primary-text-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+/* Site nav */
+
+.logo {
+  color: var(--primary-black-color);
+}
+
+.logo .accent {
+  color: var(--accent-color);
+}
+
+.site-nav .link {
+  color: var(--title-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+.contacts-nav .link {
+  color: inherit;
+}
+
+.contacts-nav .link:hover,
+.contacts-nav .link:focus {
+  color: var(--accent-color);
+}
+
+/* Hero */
+
+.hero-title {
+  color: var(--primary-white-color);
+}
+
+/* Button */
+
+.button {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+/* Hidden */
+
+.hidden {
+  display: none;
+}
+
+/* Section */
+
+.section .title {
+  color: var(--title-text-color);
+}
+
+.subtitle {
+  color: var(--primary-white-color);
+  background-color: var(--bg-subtitle-color);
+}
+
+/* Footer */
+.address-nav .link {
+  color: var(--primary-white-color);
+}
+
+.address-nav .transparent {
+  color: var(--secondary-white-color);
+}
+
+.social .link {
+  color: var(--primary-white-color);
+}
+
+.author {
+  color: var(--author-color);
+}

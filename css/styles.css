@@ -25,10 +25,8 @@
 body {
   background-color: gainsboro;
   color: var(--primary-text-color);
-}
 
-a {
-  text-decoration: none;
+  font-family: Roboto, sans-serif;
 }
 
 .list {
@@ -39,14 +37,31 @@ a {
 
 .logo {
   color: var(--primary-black-color);
+  text-decoration: none;
+
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 
 .logo .accent {
   color: var(--accent-color);
 }
 
+.site-nav,
+.contacts-nav {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  font-style: normal;
+}
+
 .site-nav .link {
   color: var(--title-text-color);
+  text-decoration: none;
 }
 
 .site-nav .link:hover,
@@ -60,6 +75,7 @@ a {
 
 .contacts-nav .link {
   color: inherit;
+  text-decoration: none;
 }
 
 .contacts-nav .link:hover,
@@ -71,6 +87,13 @@ a {
 
 .hero-title {
   color: var(--primary-white-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 /* Button */
@@ -78,17 +101,12 @@ a {
 .button {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
-}
+  text-decoration: none;
 
-.btn-filter {
-  color: var(--title-text-color);
-  background-color: var(--bg-btn-fltr-color);
-}
-
-.btn-filter:hover,
-.btn-filter:focus {
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
 }
 
 /* Hidden */
@@ -103,30 +121,164 @@ a {
   color: var(--title-text-color);
 }
 
+/* Раздел Преимущества */
+.title.features {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* Заголовки */
+.title.big {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* текст в Чем мы занимаемся */
 .subtitle {
   color: var(--primary-white-color);
   background-color: var(--bg-subtitle-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+/* Имена нашей команды */
+.title.medium {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Профессии нашей команды */
+.text-small {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1, 19;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 /* Footer */
+
+.logo-footer {
+  color: var(--primary-white-color);
+
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+}
+
+.logo-footer .accent {
+  color: var(--accent-color);
+}
+
+.address-nav {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
 .address-nav .link {
   color: var(--primary-white-color);
+  text-decoration: none;
 }
 
 .address-nav .transparent {
   color: var(--secondary-white-color);
+  text-decoration: none;
 }
 
 .social .link {
   color: var(--primary-white-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.button.subscription {
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
 }
 
 .author {
   color: var(--author-color);
+
+font-weight: 400;
+font-size: 12px;
+line-height: 2
+text-align: center;
+letter-spacing: 0.03em;
 }
 
 /* Portfolio */
 
+.btn-filter {
+  color: var(--title-text-color);
+  background-color: var(--bg-btn-fltr-color);
+
+  font-family: inherit;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.62;
+text-align: center;
+letter-spacing: 0.03em;
+
+}
+
+.btn-filter:hover,
+.btn-filter:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
 .portfolio h2 {
   color: var(--title-text-color);
+
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+}
+
+.caption{
+font-weight: 400;
+font-size: 16px;
+line-height: 1.87;
+letter-spacing: 0.03em;}
+
+.description {
+  color: var(--primary-white-color);
+
+  font-weight: 400;
+font-size: 18px;
+line-height: 1.56;
+letter-spacing: 0.03em;
 }

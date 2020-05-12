@@ -20,10 +20,11 @@
   --bg-subtitle-color: rgba(47, 48, 58, 0.8);
   --bg-btn-fltr-color: #f5f4fa;
   --author-color: rgba(255, 255, 255, 0.4); /*мелкая подпись в самом низу*/
+  --bg-footer-color: #2f303a;
 }
 
 body {
-  background-color: gainsboro;
+  background-color: var(--primary-white-color);
   color: var(--primary-text-color);
 
   font-family: Roboto, sans-serif;
@@ -177,6 +178,12 @@ body {
   letter-spacing: 0.03em;
 }
 
+/* фон Нашей команды */
+
+.bg-highlighting {
+  background-color: var(--bg-btn-fltr-color);
+}
+
 /* Footer */
 
 .logo-footer {
@@ -231,11 +238,11 @@ body {
 .author {
   color: var(--author-color);
 
-font-weight: 400;
-font-size: 12px;
-line-height: 2
-text-align: center;
-letter-spacing: 0.03em;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 /* Portfolio */
@@ -245,12 +252,11 @@ letter-spacing: 0.03em;
   background-color: var(--bg-btn-fltr-color);
 
   font-family: inherit;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.62;
-text-align: center;
-letter-spacing: 0.03em;
-
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .btn-filter:hover,
@@ -262,23 +268,28 @@ letter-spacing: 0.03em;
 .portfolio h2 {
   color: var(--title-text-color);
 
-font-weight: 700;
-font-size: 18px;
-line-height: 2;
-letter-spacing: 0.06em;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
 
-.caption{
-font-weight: 400;
-font-size: 16px;
-line-height: 1.87;
-letter-spacing: 0.03em;}
+.caption {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
 
 .description {
   color: var(--primary-white-color);
 
   font-weight: 400;
-font-size: 18px;
-line-height: 1.56;
-letter-spacing: 0.03em;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+}
+
+footer {
+  background-color: var(--bg-footer-color);
 }

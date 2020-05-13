@@ -34,10 +34,11 @@ html {
 }
 
 body {
-  background-color: gainsboro;
+  background-color: thistle;
   color: var(--primary-text-color);
 
   font-family: Roboto, sans-serif;
+  margin: 0;
 }
 
 .container {
@@ -55,10 +56,6 @@ h3,
 p {
   margin-top: 0;
   margin-bottom: 0;
-}
-
-header {
-  margin-bottom: 94px;
 }
 
 .list {
@@ -163,16 +160,17 @@ header {
 }
 
 /* Section */
-section {
-  margin-bottom: 94px;
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.no-pad-bottom {
+  padding-bottom: 0;
 }
 
 .section .title {
   color: var(--title-text-color);
-}
-
-.big-mrgn {
-  margin-bottom: 188px;
 }
 
 /* Раздел Преимущества */
